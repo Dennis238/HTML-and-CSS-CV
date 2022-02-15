@@ -48,7 +48,7 @@ a:hover{
   font-weight:bold;
 }
 .top-container{
-  background-image: url("file:///C:/Users/denni/OneDrive/Escritorio/Web%20Development/CSS%20-%20My%20Site/images/fondo.jpg");
+  background-image: url("../images/fondo.jpg");
 background-size: 1350px;
 background-repeat: no-repeat;
    background-color: #cccccc;
