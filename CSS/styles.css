@@ -362,3 +362,123 @@ img {
   cursor: pointer;
 }
 
+/* ======= Portfolio Videos Section ======= */
+/* ======= Portfolio Videos Section (carrusel 3 videos) ======= */
+/* ======= Portfolio Videos Section ======= */
+.videos-section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.videos-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.videos-section p {
+  margin-bottom: 1.5rem;
+}
+
+/* Carrusel layout */
+.video-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+}
+
+/* Slides ocultos por defecto */
+.video-slide {
+  display: none;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  order: 0;
+}
+
+/* Solo 3 visibles */
+.video-slide.is-prev,
+.video-slide.is-center,
+.video-slide.is-next {
+  display: block;
+}
+
+/* Ordenar visualmente: izq - centro - der */
+.video-slide.is-prev {
+  order: 1;
+  flex: 0 0 25%;
+  opacity: 0.6;
+}
+
+.video-slide.is-center {
+  order: 2;
+  flex: 0 0 50%;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.video-slide.is-next {
+  order: 3;
+  flex: 0 0 25%;
+  opacity: 0.6;
+}
+
+/* Videos responsivos */
+.video-slide video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Títulos */
+.video-slide h3 {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Flechas */
+.video-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.video-btn:hover {
+  border-color: #000;
+}
+
+/* Dots */
+.video-dots {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.video-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.video-dots .dot.active {
+  background: #555;
+}
+
+/* ======= End of Portfolio Videos Section ======= */
